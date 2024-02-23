@@ -1,13 +1,6 @@
 <script>
 // @ts-nocheck
 
-	// get data returned during page load
-	export let data;
-
-	// get data
-	let computers = data.computers;
-	let events = data.events;
-	
 </script>
 
 <!-- The HTML content of the page-->

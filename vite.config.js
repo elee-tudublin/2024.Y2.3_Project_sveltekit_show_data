@@ -4,13 +4,11 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit()],
-
 	test: {
 		workspace: [
 			{
 				extends: './vite.config.js',
 				plugins: [svelteTesting()],
-
 				test: {
 					name: 'client',
 					environment: 'jsdom',
@@ -22,7 +20,6 @@ export default defineConfig({
 			},
 			{
 				extends: './vite.config.js',
-
 				test: {
 					name: 'server',
 					environment: 'node',

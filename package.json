@@ -1,5 +1,5 @@
 {
-	"name": "y2-1",
+	"name": "2024.y2.4-project-sveltekit-supabase-queries-main",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -12,24 +12,27 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check .",
-		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run && npm run test:e2e",
-		"test:e2e": "playwright test"
+		"test:e2e": "playwright test",
+		"test": "npm run test:e2e && npm run test:unit -- --run",
+		"test:unit": "vitest"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.49.1",
-		"@sveltejs/adapter-node": "^5.2.11",
+		"@sveltejs/adapter-auto": "^6.0.0",
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/svelte": "^5.2.4",
-		"jsdom": "^25.0.1",
+		"jsdom": "^26.0.0",
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
 		"typescript": "^5.0.0",
-		"vite": "^6.0.0",
+		"vite": "^6.2.6",
 		"vitest": "^3.0.0"
+	},
+	"dependencies": {
+		"@supabase/supabase-js": "^2.49.4"
 	}
 }
